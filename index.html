@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Giri Prasath V — Junior SDET &amp; Test Automation Engineer</title>
+<meta name="description" content="Giri Prasath V — Junior SDET / QA Automation Engineer based in Chennai, India. WMS, EDI validation, AI-driven test tooling.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500..800&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="is-loading">
+
+<!-- ============ PRELOADER ============ -->
+<div class="preloader" id="preloader">
+  <div class="preloader__mark">
+    <span>G</span><span>P</span>
+  </div>
+  <div class="preloader__bar"><span id="preloaderFill"></span></div>
+  <p class="preloader__label">Loading portfolio</p>
+</div>
+
+<div class="cursor-dot" id="cursorDot" aria-hidden="true"></div>
+
+<!-- ============ NAV ============ -->
+<nav class="nav" id="nav">
+  <a href="#top" class="nav__brand">
+    <span class="nav__mark">GP</span>
+    <span class="nav__name">Giri Prasath V</span>
+  </a>
+
+  <ul class="nav__links" id="navLinks">
+    <li><a href="#about">About</a></li>
+    <li><a href="#expertise">Expertise</a></li>
+    <li><a href="#stack">Stack</a></li>
+    <li><a href="#experience">Experience</a></li>
+    <li><a href="#gallery">Gallery</a></li>
+  </ul>
+
+  <a href="#contact" class="nav__cta">Say hi</a>
+
+  <button class="nav__toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<!-- Mobile menu panel -->
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#about">About</a>
+  <a href="#expertise">Expertise</a>
+  <a href="#stack">Stack</a>
+  <a href="#experience">Experience</a>
+  <a href="#gallery">Gallery</a>
+  <a href="#contact" class="mobile-menu__cta">Say hi</a>
+</div>
+
+<main id="top">
+
+  <!-- ============ HERO ============ -->
+  <section class="hero" id="hero">
+    <!-- Gallery marquee: single row, full-bleed, sits behind the name -->
+    <div class="marquee" aria-label="Certifications and achievements">
+      <div class="marquee__track" id="marqueeTrack"></div>
+    </div>
+    <div class="hero__scrim" aria-hidden="true"></div>
+
+    <div class="hero__inner">
+      <p class="hero__kicker reveal">
+        <span class="pulse-dot"></span> Open to opportunities · Chennai, India
+      </p>
+
+      <h1 class="hero__name">
+        <span class="hero__word"><span style="animation-delay:.05s">Giri</span></span>
+        <span class="hero__word"><span style="animation-delay:.15s">Prasath</span></span>
+        <span class="hero__word hero__word--accent"><span style="animation-delay:.25s">V.</span></span>
+      </h1>
+
+      <p class="hero__role reveal" style="transition-delay:.35s">Junior SDET &amp; QA Automation Engineer</p>
+      <p class="hero__lede reveal" style="transition-delay:.42s">
+        I architect end-to-end test frameworks for warehouse logistics —
+        catching the EDI mismatch before it becomes a 3am production call.
+      </p>
+
+      <div class="hero__actions reveal" style="transition-delay:.5s">
+        <a href="#experience" class="btn btn--primary">View my work</a>
+        <a href="assets/resume.pdf" class="btn btn--outline" download>Download résumé</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ ABOUT ============ -->
+  <section class="section" id="about">
+    <div class="about__grid">
+      <div class="about__photo reveal">
+        <img src="assets/profile.jpg" alt="Giri Prasath V"
+             onerror="this.style.display='none'; this.parentElement.classList.add('about__photo--empty');">
+      </div>
+      <div class="about__text">
+        <span class="eyebrow reveal">01 — About</span>
+        <h2 class="reveal">Two years deep in warehouse<br>logistics test automation.</h2>
+        <p class="reveal">
+          I'm a Programmer Analyst / Junior SDET at Cognizant, working on the Americold Cold Chain
+          Solutions account. My days revolve around validating ANSI X12 EDI transactions,
+          hardening Blue Yonder &amp; Koerber WMS migrations, and building AI-integrated tooling
+          that removes manual overhead for cross-functional teams.
+        </p>
+        <p class="reveal">
+          I've won Cognizant's flagship OpenAI Codex Hackathon 2026 and a Bluebolt Business
+          Innovation award, shipped tools that went from a hackathon prototype to account-wide adoption,
+          co-built an internal knowledge-management portal, and I care more about zero-defect
+          go-lives than flashy demos.
+        </p>
+        <div class="about__facts reveal">
+          <div class="fact"><strong>2×</strong><span>OpenAI Codex &amp; Bluebolt award wins</span></div>
+          <div class="fact"><strong>7</strong><span>ANSI X12 EDI sets validated</span></div>
+          <div class="fact"><strong>0</strong><span>Defects on go-live migrations</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ EXPERTISE ============ -->
+  <section class="section section--tint" id="expertise">
+    <div class="section__head">
+      <span class="eyebrow reveal">02 — What I bring</span>
+      <h2 class="reveal">Built for real production headaches</h2>
+      <p class="reveal">Four domains this profile is stress-tested against — proven on live systems, not tutorials.</p>
+    </div>
+
+    <div class="card-grid">
+      <article class="card reveal">
+        <div class="card__icon">🏭</div>
+        <h3>WMS Platforms</h3>
+        <p>Koerber &amp; Blue Yonder — desktop scripting, multi-screen configuration, and RF terminal automation via custom TTL macros.</p>
+      </article>
+      <article class="card reveal">
+        <div class="card__icon">🔄</div>
+        <h3>EDI Transactions</h3>
+        <p>ANSI X12: 940, 943, 944, 945, 846, 856, 947 — mapping validation across large-scale migrations with zero-defect go-lives.</p>
+      </article>
+      <article class="card reveal">
+        <div class="card__icon">🤖</div>
+        <h3>Automation Architecture</h3>
+        <p>Selenium (Python &amp; Java), Pytest, and web automation frameworks built from scratch for logistics-grade reliability.</p>
+      </article>
+      <article class="card reveal">
+        <div class="card__icon">✨</div>
+        <h3>AI-Driven Tooling</h3>
+        <p>LLM-integrated utilities — "Cold Ops AI" — automating test-plan generation and debugging with strict data security.</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- ============ STACK ============ -->
+  <section class="section" id="stack">
+    <div class="section__head">
+      <span class="eyebrow reveal">03 — Toolbox</span>
+      <h2 class="reveal">Technical stack</h2>
+      <p class="reveal">Signal strength across the tools this work actually runs on.</p>
+    </div>
+
+    <div class="stack">
+      <div class="stack__radar-wrap reveal">
+        <svg id="radarChart" viewBox="0 0 340 340" aria-label="Skill proficiency radar chart"></svg>
+      </div>
+
+      <div class="stack__lists reveal">
+        <div class="stack__group">
+          <h4>Programming &amp; Scripting</h4>
+          <ul class="chips">
+            <li>Python</li><li>Java</li><li>SQL</li><li>PL/SQL</li><li>JavaScript</li><li>HTML5</li><li>CSS3</li><li>TTL</li>
+          </ul>
+        </div>
+        <div class="stack__group">
+          <h4>Automation &amp; Tools</h4>
+          <ul class="chips">
+            <li>Selenium WebDriver</li><li>Pytest</li><li>Postman</li><li>Git</li><li>Kubernetes</li>
+          </ul>
+        </div>
+        <div class="stack__group">
+          <h4>Frameworks &amp; Web</h4>
+          <ul class="chips">
+            <li>Flask</li><li>REST APIs</li><li>Jira API</li>
+          </ul>
+        </div>
+        <div class="stack__group">
+          <h4>Testing Methodologies</h4>
+          <ul class="chips">
+            <li>Functional</li><li>SIT</li><li>E2E</li><li>Regression</li><li>API Testing</li><li>Data Validation</li>
+          </ul>
+        </div>
+        <div class="stack__group">
+          <h4>Domain &amp; Protocols</h4>
+          <ul class="chips">
+            <li>EDI (ANSI X12)</li><li>WMS</li><li>RF Terminal Automation</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ EXPERIENCE ============ -->
+  <section class="section section--tint" id="experience">
+    <div class="section__head">
+      <span class="eyebrow reveal">04 — Career</span>
+      <h2 class="reveal">Where I've made an impact</h2>
+      <p class="reveal">What shipped, where, and why it mattered.</p>
+    </div>
+
+    <div class="timeline">
+      <div class="timeline__rail" aria-hidden="true"></div>
+
+      <div class="timeline__entry reveal">
+        <div class="timeline__marker"></div>
+        <div class="timeline__card">
+          <div class="timeline__top">
+            <h3>Programmer Analyst — Junior SDET</h3>
+            <span class="timeline__date">Aug 2024 — Present</span>
+          </div>
+          <p class="timeline__org">Cognizant Technology Solutions · Chennai, TN · Account: Americold Cold Chain Solutions</p>
+          <ul class="timeline__list">
+            <li><strong>AI &amp; custom tooling</strong> — built "Cold Ops AI," integrating Jira APIs and LLMs to automate test-plan generation, streamline multi-screen WMS configuration, and power AI-assisted debugging under strict data-security constraints.</li>
+            <li><strong>WMS &amp; EDI validation</strong> — led SIT and functional testing for large-scale migrations, validating ANSI X12 transactions (940, 943, 944, 945, 846, 856, 947) across Blue Yonder and Koerber.</li>
+            <li><strong>Automation architecture</strong> — built a web automation framework for Blue Yonder, extended Koerber desktop scripts, and automated sequential RF terminal workflows with custom TTL macros.</li>
+            <li><strong>Troubleshooting &amp; go-live</strong> — resolved EDI-to-WMS mapping discrepancies and drove zero-defect, on-time production migrations for high-priority clients.</li>
+            <li><strong>Award-winning innovation</strong> — won the flagship OpenAI Codex Hackathon 2026 (Cognizant × OpenAI, 1,191 teams) with team Codex CoLab, and named Business Innovation Winner at the Bluebolt Excellence Awards 2025 for "LogiGenie."</li>
+            <li><strong>Internal platforms</strong> — co-developed a Knowledge Management portal centralizing technical documentation and onboarding.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="timeline__entry reveal">
+        <div class="timeline__marker timeline__marker--edu"></div>
+        <div class="timeline__card">
+          <div class="timeline__top">
+            <h3>B.E. — Electronics &amp; Communication Engineering</h3>
+            <span class="timeline__date">2019 — 2023</span>
+          </div>
+          <p class="timeline__org">St. Joseph's Institute of Technology · Chennai · 87.8%</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ GALLERY ============ -->
+  <section class="section" id="gallery">
+    <div class="section__head">
+      <span class="eyebrow reveal">05 — Proof</span>
+      <h2 class="reveal">Gallery</h2>
+      <p class="reveal">Certifications, awards, and appreciations — filter by type.</p>
+    </div>
+
+    <div class="gallery__filters reveal" id="galleryFilters">
+      <button class="filter-btn is-active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="award">Awards</button>
+      <button class="filter-btn" data-filter="certification">Certifications</button>
+      <button class="filter-btn" data-filter="appreciation">Appreciations</button>
+    </div>
+
+    <div class="gallery__grid" id="galleryGrid"></div>
+  </section>
+
+  <!-- ============ LIGHTBOX — opens gallery images in-page ============ -->
+  <div class="lightbox" id="lightbox" aria-hidden="true">
+    <button class="lightbox__close" id="lightboxClose" aria-label="Close">✕</button>
+    <div class="lightbox__frame">
+      <img id="lightboxImg" src="" alt="">
+      <div class="lightbox__caption">
+        <span class="lightbox__tag" id="lightboxTag"></span>
+        <h3 id="lightboxTitle"></h3>
+        <p id="lightboxDesc"></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============ CONTACT ============ -->
+  <section class="section contact" id="contact">
+    <div class="contact__inner">
+      <span class="eyebrow reveal">06 — Say hello</span>
+      <h2 class="reveal">Let's build something reliable.</h2>
+      <p class="reveal">Have a role, a project, or a hard testing problem? I reply within a day.</p>
+      <div class="contact__actions reveal">
+        <a href="mailto:giriprasath2525@gmail.com" class="btn btn--primary">Email me</a>
+        <a href="http://www.linkedin.com/in/giriprasath-v" class="btn btn--outline" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="https://www.credly.com/users/giriprasathv/badges/credly" class="btn btn--outline" target="_blank" rel="noopener">Credly</a>
+      </div>
+      <p class="contact__phone reveal">(+91) 97896 92412 &nbsp;·&nbsp; Chennai, TN</p>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <p>Designed &amp; built by Giri Prasath V · © <span id="year"></span></p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
